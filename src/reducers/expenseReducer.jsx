@@ -9,8 +9,8 @@ const expenseReducer = (state, action) => {
     case 'ADD_EXPENSE':
       return { ...state, expenses: [...state.expenses, action.payload] };
     case 'DELETE_EXPENSE':
-      return {
-        ...state,
+      return { 
+        ...state, 
         expenses: state.expenses.filter((_, index) => index !== action.payload),
       };
     default:

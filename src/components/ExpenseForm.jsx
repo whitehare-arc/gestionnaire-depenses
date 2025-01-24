@@ -16,17 +16,17 @@ const ExpenseForm = ({ addExpense }) => {
 
   return (
     <form className="expense-form" onSubmit={handleSubmit}>
-      <input
-        type="number"
-        placeholder="Montant en euros"
-        value={amount}
-        onChange={(e) => setAmount(e.target.value)}
+      <input 
+        type="number" 
+        placeholder="Montant en euros" 
+        value={amount} 
+        onChange={(e) => setAmount(e.target.value)} 
       />
-      <input
-        type="text"
-        placeholder="Label"
-        value={label}
-        onChange={(e) => setLabel(e.target.value)}
+      <input 
+        type="text" 
+        placeholder="Label" 
+        value={label} 
+        onChange={(e) => setLabel(e.target.value)} 
       />
       <select value={category} onChange={(e) => setCategory(e.target.value)}>
         <option>Alimentation</option>
